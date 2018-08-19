@@ -10,7 +10,7 @@ class MontoEscritoTest {
 	void testCuatroDigitos() {
 		MontoEscrito ValorLetras = new MontoEscrito();
 		String letrasesperadas = "NUEVE MIL";
-		String letrasobtenidas = ValorLetras.Letras("9000");
+		String letrasobtenidas = ValorLetras.Letras("9876");
 		System.out.print(letrasobtenidas);
 		assertEquals(letrasesperadas, letrasobtenidas);
 
@@ -30,7 +30,7 @@ class MontoEscritoTest {
 	void testDosDigitos() {
 		MontoEscrito ValorLetras = new MontoEscrito();
 		String letrasesperadas = "NOVENTA";
-		String letrasobtenidas = ValorLetras.Letras("0090");
+		String letrasobtenidas = ValorLetras.Letras("90");
 		System.out.print(letrasobtenidas);
 		assertEquals(letrasesperadas, letrasobtenidas);
 
@@ -40,7 +40,7 @@ class MontoEscritoTest {
 	void testUnDigitos() {
 		MontoEscrito ValorLetras = new MontoEscrito();
 		String letrasesperadas = "NUEVE";
-		String letrasobtenidas = ValorLetras.Letras("0009");
+		String letrasobtenidas = ValorLetras.Letras("9");
 		System.out.print(letrasobtenidas);
 		assertEquals(letrasesperadas, letrasobtenidas);
 

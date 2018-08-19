@@ -18,6 +18,10 @@ public class MontoEscrito {
 			 numero = "0" + numero;
 		}
 		
+		if(numero.length() == 4) {
+			 numero = numero;
+		}
+		
 		
 		switch (numero.substring(0, 1)) {
 
@@ -65,39 +69,39 @@ public class MontoEscrito {
 		switch (numero.substring(1, 2)) {
 
 		case "1":
-			letras = "CIEN";
+			letras = letras + " CIEN";
 			break;
 			
 		case "2":
-			letras = "DOSCIENTOS";
+			letras = letras + " DOSCIENTOS";
 			break;
 		
 		case "3":
-			letras = "TRESCIENTOS";
+			letras = letras + " TRESCIENTOS";
 			break;
 			
 		case "4":
-			letras = "CUATROCIENTOS";
+			letras = letras + " CUATROCIENTOS";
 			break;
 			
 		case "5":
-			letras = "QUINIENTOS";
+			letras = letras + " QUINIENTOS";
 			break;
 			
 		case "6":
-			letras = "SEISCIENTOS";
+			letras = letras + " SEISCIENTOS";
 			break;
 			
 		case "7":
-			letras = "SIETECIENTOS";
+			letras = letras + " SIETECIENTOS";
 			break;
 			
 		case "8":
-			letras = "OCHOCIENTOS";
+			letras = letras + " OCHOCIENTOS";
 			break;
 			
 		case "9":
-			letras = "NOVECIENTOS";
+			letras = letras + " NOVECIENTOS";
 			break;
 			
 		default:
@@ -108,39 +112,39 @@ public class MontoEscrito {
 		switch (numero.substring(2, 3)) {
 
 		case "1":
-			letras = "DIEZ";
+			letras = letras + " DIEZ";
 			break;
 			
 		case "2":
-			letras = "VEINTE";
+			letras = letras + " VEINTE";
 			break;
 		
 		case "3":
-			letras = "TREINTA";
+			letras = letras + " TREINTA";
 			break;
 			
 		case "4":
-			letras = "CUARENTA";
+			letras = letras + " CUARENTA";
 			break;
 			
 		case "5":
-			letras = "CINCUENTA";
+			letras = letras + " CINCUENTA";
 			break;
 			
 		case "6":
-			letras = "SESENTA";
+			letras = letras + " SESENTA";
 			break;
 			
 		case "7":
-			letras = "SETENTA";
+			letras = letras + " SETENTA";
 			break;
 			
 		case "8":
-			letras = "OCHENTA";
+			letras = letras + " OCHENTA";
 			break;
 			
 		case "9":
-			letras = "NOVENTA";
+			letras = letras + " NOVENTA";
 			break;
 			
 		default:
@@ -148,42 +152,42 @@ public class MontoEscrito {
 			break;
 		}
 		
-		switch (numero.substring(3, 43)) {
+		switch (numero.substring(3, 4)) {
 
 		case "1":
-			letras = "UNO";
+			letras = letras + " UNO";
 			break;
 			
 		case "2":
-			letras = "DOS";
+			letras = letras + " DOS";
 			break;
 		
 		case "3":
-			letras = "TRES";
+			letras = letras + " TRES";
 			break;
 			
 		case "4":
-			letras = "CUATRO";
+			letras = letras + " CUATRO";
 			break;
 			
 		case "5":
-			letras = "CINCO";
+			letras = letras + " CINCO";
 			break;
 			
 		case "6":
-			letras = "SEIS";
+			letras = letras + " SEIS";
 			break;
 			
 		case "7":
-			letras = "SIETE";
+			letras = letras + " SIETE";
 			break;
 			
 		case "8":
-			letras = "OCHO";
+			letras = letras + " OCHO";
 			break;
 			
 		case "9":
-			letras = "NUEVE";
+			letras = letras + " NUEVE";
 			break;
 			
 		default:
