@@ -9,19 +9,20 @@ class MontoEscritoTest {
 	@Test
 	void testCuatroDigitos() {
 		MontoEscrito ValorLetras = new MontoEscrito();
-		String letrasesperadas = "NUEVE MIL";
+		String letrasesperadas = "NUEVE MIL OCHOCIENTOS SETENTA SEIS";
 		String letrasobtenidas = ValorLetras.Letras("9876");
-		System.out.print(letrasobtenidas);
+		System.out.println(letrasobtenidas);
 		assertEquals(letrasesperadas, letrasobtenidas);
+		
 
 	}
 	
 	@Test
 	void testTresDigitos() {
 		MontoEscrito ValorLetras = new MontoEscrito();
-		String letrasesperadas = "NOVECIENTOS";
-		String letrasobtenidas = ValorLetras.Letras("900");
-		System.out.print(letrasobtenidas);
+		String letrasesperadas = "NOVECIENTOS NOVENTA NUEVE";
+		String letrasobtenidas = ValorLetras.Letras("999");
+		System.out.println(letrasobtenidas);
 		assertEquals(letrasesperadas, letrasobtenidas);
 
 	}
@@ -29,9 +30,9 @@ class MontoEscritoTest {
 	@Test
 	void testDosDigitos() {
 		MontoEscrito ValorLetras = new MontoEscrito();
-		String letrasesperadas = "NOVENTA";
-		String letrasobtenidas = ValorLetras.Letras("90");
-		System.out.print(letrasobtenidas);
+		String letrasesperadas = "NOVENTA NUEVE";
+		String letrasobtenidas = ValorLetras.Letras("99");
+		System.out.println(letrasobtenidas);
 		assertEquals(letrasesperadas, letrasobtenidas);
 
 	}
@@ -41,7 +42,7 @@ class MontoEscritoTest {
 		MontoEscrito ValorLetras = new MontoEscrito();
 		String letrasesperadas = "NUEVE";
 		String letrasobtenidas = ValorLetras.Letras("9");
-		System.out.print(letrasobtenidas);
+		System.out.println(letrasobtenidas);
 		assertEquals(letrasesperadas, letrasobtenidas);
 
 	}

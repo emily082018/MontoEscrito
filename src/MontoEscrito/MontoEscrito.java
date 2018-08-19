@@ -5,191 +5,194 @@ public class MontoEscrito {
 	public String Letras(String numero) {
 
 		String letras = "";
-		
-		if(numero.length() == 1) {
-			 numero = "000" + numero;
+
+		if (numero.length() == 1) {
+			numero = "000" + numero;
 		}
-		
-		if(numero.length() == 2) {
-			 numero = "00" + numero;
+
+		if (numero.length() == 2) {
+			numero = "00" + numero;
 		}
-		
-		if(numero.length() == 3) {
-			 numero = "0" + numero;
+
+		if (numero.length() == 3) {
+			numero = "0" + numero;
 		}
-		
-		if(numero.length() == 4) {
-			 numero = numero;
-		}
-		
-		
+
 		switch (numero.substring(0, 1)) {
 
 		case "1":
-			letras = "MIL";
+			letras = "MIL ";
 			break;
-			
+
 		case "2":
-			letras = "DOS MIL";
+			letras = "DOS MIL ";
 			break;
-		
+
 		case "3":
-			letras = "TRES MIL";
+			letras = "TRES MIL ";
 			break;
-			
+
 		case "4":
-			letras = "CUATRO MIL";
+			letras = "CUATRO MIL ";
 			break;
-			
+
 		case "5":
-			letras = "CINCO MIL";
+			letras = "CINCO MIL ";
 			break;
-			
+
 		case "6":
-			letras = "SEIS MIL";
+			letras = "SEIS MIL ";
 			break;
-			
+
 		case "7":
-			letras = "SIETE MIL";
+			letras = "SIETE MIL ";
 			break;
-			
+
 		case "8":
-			letras = "OCHO MIL";
+			letras = "OCHO MIL ";
 			break;
-			
+
 		case "9":
-			letras = "NUEVE MIL";
+			letras = "NUEVE MIL ";
 			break;
-			
+
 		default:
 			letras = "";
 			break;
 		}
-		
+
 		switch (numero.substring(1, 2)) {
 
 		case "1":
-			letras = letras + " CIEN";
+			letras = letras + "CIEN ";
 			break;
-			
+
 		case "2":
-			letras = letras + " DOSCIENTOS";
+			letras = letras + "DOSCIENTOS ";
 			break;
-		
+
 		case "3":
-			letras = letras + " TRESCIENTOS";
+			letras = letras + "TRESCIENTOS ";
 			break;
-			
+
 		case "4":
-			letras = letras + " CUATROCIENTOS";
+			letras = letras + "CUATROCIENTOS ";
 			break;
-			
+
 		case "5":
-			letras = letras + " QUINIENTOS";
+			letras = letras + "QUINIENTOS ";
 			break;
-			
+
 		case "6":
-			letras = letras + " SEISCIENTOS";
+			letras = letras + "SEISCIENTOS ";
 			break;
-			
+
 		case "7":
-			letras = letras + " SIETECIENTOS";
+			letras = letras + "SIETECIENTOS ";
 			break;
-			
+
 		case "8":
-			letras = letras + " OCHOCIENTOS";
+			letras = letras + "OCHOCIENTOS ";
 			break;
-			
+
 		case "9":
-			letras = letras + " NOVECIENTOS";
+			letras = letras + "NOVECIENTOS ";
 			break;
-			
+
 		default:
 			letras = "";
 			break;
 		}
-		
+
 		switch (numero.substring(2, 3)) {
 
 		case "1":
-			letras = letras + " DIEZ";
+			letras = letras + "DIEZ ";
 			break;
-			
+
 		case "2":
-			letras = letras + " VEINTE";
+			letras = letras + "VEINTE ";
 			break;
-		
+
 		case "3":
-			letras = letras + " TREINTA";
+			letras = letras + "TREINTA ";
 			break;
-			
+
 		case "4":
-			letras = letras + " CUARENTA";
+			letras = letras + "CUARENTA ";
 			break;
-			
+
 		case "5":
-			letras = letras + " CINCUENTA";
+			letras = letras + "CINCUENTA ";
 			break;
-			
+
 		case "6":
-			letras = letras + " SESENTA";
+			letras = letras + "SESENTA ";
 			break;
-			
+
 		case "7":
-			letras = letras + " SETENTA";
+			letras = letras + "SETENTA ";
 			break;
-			
+
 		case "8":
-			letras = letras + " OCHENTA";
+			letras = letras + "OCHENTA ";
 			break;
-			
+
 		case "9":
-			letras = letras + " NOVENTA";
+			letras = letras + "NOVENTA ";
 			break;
 			
+		case "":
+			letras = "";
+			break;
+
 		default:
 			letras = "";
 			break;
 		}
-		
+
 		switch (numero.substring(3, 4)) {
 
 		case "1":
-			letras = letras + " UNO";
+			letras = letras + "UNO";
 			break;
-			
+
 		case "2":
-			letras = letras + " DOS";
+			letras = letras + "DOS";
 			break;
-		
+
 		case "3":
-			letras = letras + " TRES";
+			letras = letras + "TRES";
 			break;
-			
+
 		case "4":
-			letras = letras + " CUATRO";
+			letras = letras + "CUATRO";
 			break;
-			
+
 		case "5":
-			letras = letras + " CINCO";
+			letras = letras + "CINCO";
 			break;
-			
+
 		case "6":
-			letras = letras + " SEIS";
+			letras = letras + "SEIS";
 			break;
-			
+
 		case "7":
-			letras = letras + " SIETE";
+			letras = letras + "SIETE";
 			break;
-			
+
 		case "8":
-			letras = letras + " OCHO";
+			letras = letras + "OCHO";
 			break;
-			
+
 		case "9":
-			letras = letras + " NUEVE";
+			letras = letras + "NUEVE";
 			break;
-			
+
+		case "":
+			letras = letras + "";
+			break;
+
 		default:
 			letras = "";
 			break;
@@ -198,6 +201,5 @@ public class MontoEscrito {
 		return letras;
 
 	}
-	
-	
+
 }
