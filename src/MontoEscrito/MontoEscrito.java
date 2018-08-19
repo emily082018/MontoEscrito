@@ -6,6 +6,19 @@ public class MontoEscrito {
 
 		String letras = "";
 		
+		if(numero.length() == 1) {
+			 numero = "000" + numero;
+		}
+		
+		if(numero.length() == 2) {
+			 numero = "00" + numero;
+		}
+		
+		if(numero.length() == 3) {
+			 numero = "0" + numero;
+		}
+		
+		
 		switch (numero.substring(0, 1)) {
 
 		case "1":
