@@ -20,8 +20,8 @@ class MontoEscritoTest {
 	@Test
 	void testTresDigitos() {
 		MontoEscrito ValorLetras = new MontoEscrito();
-		String letrasesperadas = "NOVECIENTOS NOVENTA NUEVE";
-		String letrasobtenidas = ValorLetras.Letras("999");
+		String letrasesperadas = "CIEN";
+		String letrasobtenidas = ValorLetras.Letras("100");
 		System.out.println(letrasobtenidas);
 		assertEquals(letrasesperadas, letrasobtenidas);
 

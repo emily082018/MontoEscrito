@@ -56,6 +56,10 @@ public class MontoEscrito {
 			letras = "NUEVE MIL ";
 			break;
 
+		case "0":
+			letras = letras + "";
+			break;
+
 		default:
 			letras = "";
 			break;
@@ -64,7 +68,10 @@ public class MontoEscrito {
 		switch (numero.substring(1, 2)) {
 
 		case "1":
-			letras = letras + "CIEN ";
+			if (numero.substring(2, 3).equals("0") & numero.substring(3, 4).equals("0"))
+				letras = letras + "CIEN";
+			else
+				letras = letras + "CIENTO ";
 			break;
 
 		case "2":
@@ -99,8 +106,12 @@ public class MontoEscrito {
 			letras = letras + "NOVECIENTOS ";
 			break;
 
+		case "0":
+			letras = letras + "";
+			break;
+
 		default:
-			letras = "";
+			letras = letras + "";
 			break;
 		}
 
@@ -141,9 +152,9 @@ public class MontoEscrito {
 		case "9":
 			letras = letras + "NOVENTA ";
 			break;
-			
-		case "":
-			letras = "";
+
+		case "0":
+			letras = letras + "";
 			break;
 
 		default:
@@ -189,7 +200,7 @@ public class MontoEscrito {
 			letras = letras + "NUEVE";
 			break;
 
-		case "":
+		case "0":
 			letras = letras + "";
 			break;
 
