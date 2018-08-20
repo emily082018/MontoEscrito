@@ -118,39 +118,79 @@ public class MontoEscrito {
 		switch (numero.substring(2, 3)) {
 
 		case "1":
-			letras = letras + "DIEZ ";
+			if (numero.substring(3, 4).equals("0"))
+				letras = letras + "DIEZ";
+			else {
+				if (numero.substring(3, 4).equals("1"))
+					letras = letras + "ONCE";
+				else if (numero.substring(3, 4).equals("2"))
+					letras = letras + "DOCE";
+				else if (numero.substring(3, 4).equals("3"))
+					letras = letras + "TRECE";
+				else if (numero.substring(3, 4).equals("4"))
+					letras = letras + "CATORCE";
+				else if (numero.substring(3, 4).equals("5"))
+					letras = letras + "QUINCE";
+				else
+					letras = letras + "DIECI";
+			}
+
 			break;
 
 		case "2":
-			letras = letras + "VEINTE ";
+			if (numero.substring(3, 4).equals("0"))
+				letras = letras + "VEINTE";
+			else
+				letras = letras + "VEINTI";
 			break;
 
 		case "3":
-			letras = letras + "TREINTA ";
+			if (numero.substring(3, 4).equals("0"))
+				letras = letras + "TREINTA";
+			else
+				letras = letras + "TREINTA Y ";
 			break;
 
 		case "4":
-			letras = letras + "CUARENTA ";
+			if (numero.substring(3, 4).equals("0"))
+				letras = letras + "CUARENTA";
+			else
+				letras = letras + "CUARENTA Y ";
 			break;
 
 		case "5":
-			letras = letras + "CINCUENTA ";
+			if (numero.substring(3, 4).equals("0"))
+				letras = letras + "CINCUENTA";
+			else
+				letras = letras + "CINCUENTA Y ";
 			break;
 
 		case "6":
-			letras = letras + "SESENTA ";
+			if (numero.substring(3, 4).equals("0"))
+				letras = letras + "SESENTA";
+			else
+				letras = letras + "SESENTA Y ";
 			break;
 
 		case "7":
-			letras = letras + "SETENTA ";
+			if (numero.substring(3, 4).equals("0"))
+				letras = letras + "SETENTA";
+			else
+				letras = letras + "SETENTA Y ";
 			break;
 
 		case "8":
-			letras = letras + "OCHENTA ";
+			if (numero.substring(3, 4).equals("0"))
+				letras = letras + "OCHENTA";
+			else
+				letras = letras + "OCHENTA Y ";
 			break;
 
 		case "9":
-			letras = letras + "NOVENTA ";
+			if (numero.substring(3, 4).equals("0"))
+				letras = letras + "NOVENTA";
+			else
+				letras = letras + "NOVENTA Y ";
 			break;
 
 		case "0":
@@ -165,22 +205,27 @@ public class MontoEscrito {
 		switch (numero.substring(3, 4)) {
 
 		case "1":
-			letras = letras + "UNO";
+			if (!numero.substring(3, 4).equals("1"))
+				letras = letras + "UNO";
 			break;
 
 		case "2":
-			letras = letras + "DOS";
+			if (!numero.substring(3, 4).equals("2"))
+				letras = letras + "DOS";
 			break;
 
 		case "3":
+			if (!numero.substring(3, 4).equals("3"))
 			letras = letras + "TRES";
 			break;
 
 		case "4":
+			if (!numero.substring(3, 4).equals("4"))
 			letras = letras + "CUATRO";
 			break;
 
 		case "5":
+			if (!numero.substring(3, 4).equals("5"))
 			letras = letras + "CINCO";
 			break;
 
